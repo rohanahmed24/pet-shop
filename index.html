@@ -26,277 +26,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Pet SHop</title>
   </head>
-  <body class="text-black font-['Sora']" data-theme="light">
+  <body class="text-black font-['Sora']">
     <!-- header section -->
     <header>
-      <div class="bg-[#FFF9F4]">
-        <div class="navbar container mx-auto max-w-[1600px]">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-['Sora']"
-              >
-                <li><a href="#">Find a pet</a></li>
-                <li><a href="#">Breeds</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <img
-              href="./index.html"
-              src="./c1-assets/Group 1.png"
-              alt="logo"
-              class="w-[231px]"
-            />
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li
-                class="hover:cursor-pointer hover:scale-110 hover:bg-[#FFDC26]"
-              >
-                <a>Find a pet</a>
-              </li>
-              <li
-                class="hover:cursor-pointer hover:scale-110 hover:bg-[#FFDC26]"
-              >
-                <a>Breeds</a>
-              </li>
-              <li
-                class="hover:cursor-pointer hover:scale-110 hover:bg-[#FFDC26]"
-              >
-                <a>Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar-end flex items-center gap-4">
-            <label class="swap swap-rotate cursor-pointer">
-              <!-- this hidden checkbox controls the state -->
-              <input
-                type="checkbox"
-                class="theme-controller"
-                value="synthwave"
+      <div class="navbar bg-base-100 shadow-sm bg-[#FFF9F4] px-4">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl"
+            ><img src="./c1-assets/logo-header.png" alt=""
+          /></a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
-
-              <!-- sun icon -->
-              <svg
-                class="swap-off h-9 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
-                />
-              </svg>
-
-              <!-- moon icon -->
-              <svg
-                class="swap-on h-9 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
-                />
-              </svg>
-            </label>
-            <a href="#"
-              ><i
-                class="hover:cursor-pointer hover:scale-150 fa-solid fa-magnifying-glass"
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="hover:cursor-pointer hover:scale-150 fa-regular fa-bell"
-              ></i
-            ></a>
-            <button
-              class="btn bg-[#fff] text-black px-6 py-4 border-yellow-400 hover:bg-[#FFDC26]"
-            >
-              Login
-            </button>
-            <button
-              class="btn bg-[#FFDC26] text-black px-6 py-4 hover:bg-[#fff] hover:border-1 hover:border-yellow-400"
-            >
-              Register
-            </button>
-          </div>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
-    <!-- main section -->
+    <!-- banner section -->
     <main>
-      <section
-        class="hero flex flex-row align-center justify-center relative h-[749px] max-w-[1600px] mx-auto"
-      >
-        <div class="z-20 w-[680px] absolute left-0 top-[100px]">
-          <h1 class="text-6xl font-bold">
-            Pamper Your Pet, Because They Deserve the Best
-          </h1>
-          <p class="text-xl py-4">
-            Discover a world of treats, toys, and essentials handpicked for your
-            furry friends. Shop now and make tails wag with joy!
-          </p>
-          <button
-            class="btn bg-[#FFDC26] text-black px-6 py-4 hover:bg-[#fff] hover:border-1 hover:border-yellow-400 status status-info animate-bounce mt-4"
-          >
-            Find a pet
-          </button>
-        </div>
-        <div class="absolute top-1">
-          <img src="./c1-assets/cat-big.png" alt="cat-big" class="w-[1320px]" />
+      <section class="px-4">
+        <div class="mt-8">
+          <h1 class="font-['ADLaM Display'] text-3xl font-extrabold">Pamper Your Pet, Because They Deserve the Best</h1>
+          <p class="font-['Sora'] text-base py-4 relative z-10">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="bg-yellow-400 py-2 px-4 text-black rounded-md relative z-10">Find a pet</button>
+          <img src="./c1-assets/cat-big.png" alt="hero image" class="mt-[-27%] relative z-1">
         </div>
       </section>
       <!-- category section -->
-      <section>
-        <div class="z-20 mt-20">
-          <h2
-            class="text-2xl font-bold text-black font-['ADLaM Display'] mx-auto max-w-[1600px]"
-          >
-            Browse By Categories
-          </h2>
-          <div class="grid grid-cols-6 gap-4 max-w-[1600px] mx-auto">
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/dog-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Dog</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
+       <section class="px-4">
+        <div class="mt-14">
+          <h2 class="font-['ADLaM Display'] text-2xl font-extrabold">Browse By Categories</h2>
+        </div>
+        <div class="mx-auto w-full">
+          <div class="mt-8 grid grid-cols-2 gap-3 justify-center items-center">
+            <div class="flex flex-col justify-center items-center bg-[#F9DF8A] w-44 h-56">
+              <img src="./c1-assets/dog-cartoon.png" alt="" class="bg-white rounded-full p-5">
+              <h4 class="font-['Sora'] text-base mt-5">Dogs</h4>
             </div>
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/fish-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Fish</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/cat-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Cat</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/bird-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Bird</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/dog-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Dog</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                class="card bg-base-100 shadow-sm bg-[#F9DF8A] w-[200px] mt-10"
-              >
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./c1-assets/rabbit-cartoon.png"
-                    alt="dog-cartoon"
-                    class="rounded-full bg-[#FFF9F4] px-3 py-3"
-                  />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rabbit</h2>
-                  <p>3 Items</p>
-                </div>
-              </div>
+            <div class="flex flex-col justify-center items-center bg-[#F9DF8A] w-44 h-56">
+              <img src="./c1-assets/cat-cartoon.png" alt="" class="bg-white rounded-full p-5">
+              <h4 class="font-['Sora'] text-base mt-5">Cats</h4>
             </div>
           </div>
         </div>
-      </section>
-      <!-- trendy collection -->
-      <section class="bg-[#FFF9F4] w-full my-20">
-        <div
-          class="trendy-collection flex flex-col max-w-[1600px] mx-auto justify-center items-start h-[775px]"
-        >
-          <h3 class="text-2xl font-bold text-black font-['ADLaM Display'] mb-10">
-            Trending Pet Products
-          </h3>
-          <div class="grid grid-cols-4 gap-4 max-w-[1600px]">
-            <div class="col-span-2 row-span-2 bg-[#F9DF8A] w-[424px] h-[402px] relative p-5">
-              <h2 class="text-2xl font-bold text-black font-['ADLaM Display'] mt-10">T-Shirts for Dogs</h2>
-              <p class="font-['Sora'] w-[244px]">
-                Discover a world of treats, toys, and essentials handpicked for
-                your furry friends.
-              </p>
-              <button class="btn btn-primary bg-[#FFF] text-black border-none">Shop Now</button>
-              <img src="./c1-assets/cute-pet-mid.png" alt="" class="w-[244px] absolute left-[42%] top-[25%]">
-            </div>
-          </div>
-        </div>
-      </section>
+       </section>
     </main>
   </body>
 </html>
