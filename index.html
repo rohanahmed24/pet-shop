@@ -26,7 +26,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Pet SHop</title>
   </head>
-  <body class="text-black font-['Sora']">
+  <body class="text-black font-['Sora'] bg-white">
     <!-- header section -->
     <header>
       <div class="navbar bg-base-100 shadow-sm bg-[#FFF9F4] px-4">
@@ -276,17 +276,93 @@
             Everyday Low Price
           </h1>
         </div>
-        <div class="w-96 h-80 bg-gradient-to-tl from-violet-300 to-fuchsia-300 mx-auto pt-9 pl-9 relative">
-          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">Pet Grooming Mitt</h4>
-          <p class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-white mt-4">$7.99</p>
-          <img src="./c1-assets/cute-dog-mid.png" alt="" class="w-52 absolute right-[-2%] top-[25%]">
+        <div
+          class="max-w-[370px] min-h-[350px] bg-gradient-to-tl from-violet-300 to-fuchsia-300 mx-auto pt-9 pl-9 relative rounded-xl flex flex-col"
+        >
+          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
+            Pet Grooming Mitt
+          </h4>
+          <p
+            class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-white mt-4"
+          >
+            $7.99
+          </p>
+          <img
+            src="./c1-assets/cute-dog-mid.png"
+            alt=""
+            class="w-52 absolute right-[0%] top-[30%]"
+          />
         </div>
-        <div class="mt-14 mb-8 ml-4">
+        <div
+          class="max-w-[370px] min-h-[350px] bg-gradient-to-br from-slate-100 to-yellow-400 mx-auto pt-9 pl-9 relative rounded-xl mt-5 flex flex-col"
+        >
+          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
+            T-Shirt for Dogs
+          </h4>
+          <p
+            class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-yellow-400 mt-4"
+          >
+            $7.99
+          </p>
+          <img
+            src="./c1-assets/cute-pet-mid.png"
+            alt=""
+            class="w-52 absolute right-[0%] top-[25%]"
+          />
         </div>
-        <div class="w-96 h-80 bg-gradient-to-br from-slate-100 to-yellow-400 mx-auto pt-9 pl-9 relative">
-          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">T-Shirt for Dogs</h4>
-          <p class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-yellow-400 mt-4">$7.99</p>
-          <img src="./c1-assets/cute-pet-mid.png" alt="" class="w-52 absolute right-[-2%] top-[20%]">
+      </section>
+      <!-- newsletter -->
+      <section class="relative">
+        <div class="mt-8">
+          <div
+            class="card bg-base-100 w-80 shadow-sm mx-[10%] bg-[#FFF9F4] relative z-10"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="./c1-assets/cute-pet-mid.png"
+                alt="Shoes"
+                class="rounded-xl w-[190px]"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Get Pawsome News!</h2>
+              <p>Exclusive training tips, ticks, product deals and more.</p>
+              <input
+                type="text"
+                placeholder="Enter email"
+                class="input w-full"
+              />
+              <div class="mt-4">
+                <button class="btn bg-yellow-400 text-black">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-[752px] w-full bg-yellow-400 bg-opacity-50 absolute z-1 top-[50%]"
+        >
+          <div class="mt-[80%] ml-[5%] mr-[10%]">
+            <div>
+              <img src="./c1-assets/Group 31.png" alt="" />
+            </div>
+            <p class="font-['Sora'] text-base py-5">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+            </p>
+            <div class="flex flex-col gap-2">
+              <p>Find a pet</p>
+              <p>Breeds</p>
+              <p>Contact us</p>
+            </div>
+            <div class="flex flex-col gap-2 mt-8">
+              <p class="font-['Sora'] text-base font-bold">Follow us</p>
+              <div class="flex gap-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
