@@ -28,8 +28,10 @@
   </head>
   <body class="text-black font-['Sora'] bg-white">
     <!-- header section -->
-    <header>
-      <div class="navbar bg-base-100 shadow-sm bg-[#FFF9F4] px-4">
+    <header class="bg-[#FFF9F4] xl:relative xl:z-10">
+      <div
+        class="navbar bg-base-100 bg-[#FFF9F4] shadow-sm xl:container xl:mx-auto"
+      >
         <div class="flex-1">
           <a class="btn btn-ghost text-xl"
             ><img src="./c1-assets/logo-header.png" alt=""
@@ -57,29 +59,35 @@
     </header>
     <!-- banner section -->
     <main>
-      <section class="px-4">
-        <div class="mt-8">
-          <h1 class="font-['ADLaM Display'] text-3xl font-extrabold">
+      <section class="px-4 xl:container xl:mx-auto xl:px-0">
+        <div
+          class="mt-8 xl:flex xl:flex-col xl:justify-center xl:items-start xl:mt-14"
+        >
+          <h1
+            class="font-['ADLaM Display'] text-3xl xl:text-[56px] leading-normal font-extrabold z-10 xl:w-[681px]"
+          >
             Pamper Your Pet, Because They Deserve the Best
           </h1>
-          <p class="font-['Sora'] text-base py-4 relative z-10">
+          <p
+            class="font-['Sora'] text-base py-4 relative z-10 xl:w-[681px] xl:text-[20px] leading-normal"
+          >
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
           <button
-            class="bg-yellow-400 py-2 px-4 text-black rounded-md relative z-10"
+            class="bg-yellow-400 py-2 px-4 text-black rounded-md relative xl:z-10 animate-pulse xl:text-[20px] leading-normal"
           >
             Find a pet
           </button>
           <img
             src="./c1-assets/cat-big.png"
             alt="hero image"
-            class="mt-[-27%] relative z-1"
+            class="mt-[-27%] relative z-1 xl:mt-[-30%]"
           />
         </div>
       </section>
       <!-- category section -->
-      <section class="px-4">
+      <section class="px-4 xl:container xl:mx-auto xl:px-0">
         <div class="mt-14">
           <h2 class="font-['ADLaM Display'] text-2xl font-extrabold">
             Browse By Categories
@@ -87,7 +95,7 @@
         </div>
         <div class="mx-auto">
           <div
-            class="mt-8 grid grid-cols-2 justify-center items-center gap-x-3 gap-y-8"
+            class="mt-8 grid grid-cols-2 justify-center items-center gap-x-3 gap-y-8 xl:grid-cols-6 xl:gap-x-8 xl:gap-y-14"
           >
             <div
               class="flex flex-col justify-center items-center bg-[#F9DF8A] w-44 h-56 mx-auto rounded-md"
@@ -159,36 +167,37 @@
         </div>
       </section>
       <!-- browse by categories -->
-      <section class="px-4">
+      <section class="px-4 xl:container xl:mx-auto xl:px-0">
         <div class="mt-14 mb-8">
           <h2 class="font-['ADLaM Display'] text-2xl font-extrabold">
             Browse By Categories
           </h2>
         </div>
+        <!-- main grid -->
         <div
-          class="mx-auto w-full bg-[#F9DF8A] h-96 flex flex-col justify-items-center p-6 relative"
+          class="grid grid-cols-1 gap-3 xl:grid xl:grid-cols-6 xl:gap-3 xl:mt-5"
         >
-          <h2 class="font-['ADLaM Display'] text-2xl font-extrabold">
-            T- Shirt For Dogs
-          </h2>
-          <p class="py-4">
-            Discover a world of treats, toys, and essentials handpicked for your
-            furry friends.
-          </p>
-          <div>
+          <div
+            class="w-full bg-[#F9DF8A] h-96 relative flex flex-col justify-start items-start p-5 xl:col-span-2 xl:row-span-2 xl:h-[350px]"
+          >
+            <h2 class="font-['ADLaM Display'] text-2xl font-extrabold">
+              T- Shirt For Dogs
+            </h2>
+            <p class="py-4">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends.
+            </p>
             <button class="bg-black text-white px-4 py-2 rounded-md">
               Shop Now
             </button>
+            <img
+              src="./c1-assets/cute-pet-mid.png"
+              alt=""
+              class="w-40 absolute right-[5%] top-[40%]"
+            />
           </div>
-          <img
-            src="./c1-assets/cute-pet-mid.png"
-            alt=""
-            class="w-52 absolute right-[5%] top-[33%]"
-          />
-        </div>
-        <div class="grid grid-cols-2 gap-3 mt-5">
           <div
-            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100"
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
           >
             <div class="my-5 ml-5">
               <img
@@ -208,7 +217,7 @@
             </div>
           </div>
           <div
-            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100"
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
           >
             <div class="my-5 ml-5">
               <img
@@ -228,7 +237,7 @@
             </div>
           </div>
           <div
-            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100"
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
           >
             <div class="my-5 ml-5">
               <img
@@ -248,7 +257,87 @@
             </div>
           </div>
           <div
-            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100"
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
+          >
+            <div class="my-5 ml-5">
+              <img
+                src="./c1-assets/pet-couch.png"
+                alt=""
+                class="bg-[#FFF9F4] p-4"
+              />
+            </div>
+            <div class="my-5">
+              <i class="fa-solid fa-star text-yellow-400 ml-3"
+                ><span class="text-black ml-2">4.9</span></i
+              >
+              <h3 class="font-['ADLaM Display'] capitalize ml-3 font-extrabold">
+                pet bed
+              </h3>
+              <p class="font-['Sora'] ml-3">$39.99</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
+          >
+            <div class="my-5 ml-5">
+              <img
+                src="./c1-assets/pet-couch.png"
+                alt=""
+                class="bg-[#FFF9F4] p-4"
+              />
+            </div>
+            <div class="my-5">
+              <i class="fa-solid fa-star text-yellow-400 ml-3"
+                ><span class="text-black ml-2">4.9</span></i
+              >
+              <h3 class="font-['ADLaM Display'] capitalize ml-3 font-extrabold">
+                pet bed
+              </h3>
+              <p class="font-['Sora'] ml-3">$39.99</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
+          >
+            <div class="my-5 ml-5">
+              <img
+                src="./c1-assets/pet-couch.png"
+                alt=""
+                class="bg-[#FFF9F4] p-4"
+              />
+            </div>
+            <div class="my-5">
+              <i class="fa-solid fa-star text-yellow-400 ml-3"
+                ><span class="text-black ml-2">4.9</span></i
+              >
+              <h3 class="font-['ADLaM Display'] capitalize ml-3 font-extrabold">
+                pet bed
+              </h3>
+              <p class="font-['Sora'] ml-3">$39.99</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
+          >
+            <div class="my-5 ml-5">
+              <img
+                src="./c1-assets/pet-couch.png"
+                alt=""
+                class="bg-[#FFF9F4] p-4"
+              />
+            </div>
+            <div class="my-5">
+              <i class="fa-solid fa-star text-yellow-400 ml-3"
+                ><span class="text-black ml-2">4.9</span></i
+              >
+              <h3 class="font-['ADLaM Display'] capitalize ml-3 font-extrabold">
+                pet bed
+              </h3>
+              <p class="font-['Sora'] ml-3">$39.99</p>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-center min-w-[171.244px] min-h-[73.479px] rounded-md border-[1px] border-red-100 xl:min-w-48 xl:min-h-16 xl:rounded-md xl:border-[1px] xl:border-red-100"
           >
             <div class="my-5 ml-5">
               <img
@@ -270,45 +359,47 @@
         </div>
       </section>
       <!-- everyday low price -->
-      <section>
+      <section class="xl:container xl:mx-auto">
         <div class="mt-14 mb-8 ml-4">
           <h1 class="font-['ADLaM Display'] text-2xl font-extrabold">
             Everyday Low Price
           </h1>
         </div>
-        <div
-          class="max-w-[370px] min-h-[350px] bg-gradient-to-tl from-violet-300 to-fuchsia-300 mx-auto pt-9 pl-9 relative rounded-xl flex flex-col"
-        >
-          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
-            Pet Grooming Mitt
-          </h4>
-          <p
-            class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-white mt-4"
+        <div class="xl:grid xl:grid-cols-3">
+          <div
+            class="min-h-[350px] bg-gradient-to-tl from-violet-300 to-fuchsia-300 mx-auto pt-9 pl-9 relative rounded-xl flex flex-col xl:mx-0 xl:static xl:col-span-2 xl:min-h-[350px] xl:justify-start xl:items-start"
           >
-            $7.99
-          </p>
-          <img
-            src="./c1-assets/cute-dog-mid.png"
-            alt=""
-            class="w-52 absolute right-[0%] top-[30%]"
-          />
-        </div>
-        <div
-          class="max-w-[370px] min-h-[350px] bg-gradient-to-br from-slate-100 to-yellow-400 mx-auto pt-9 pl-9 relative rounded-xl mt-5 flex flex-col"
-        >
-          <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
-            T-Shirt for Dogs
-          </h4>
-          <p
-            class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-yellow-400 mt-4"
+            <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
+              Pet Grooming Mitt
+            </h4>
+            <p
+              class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-white mt-4"
+            >
+              $7.99
+            </p>
+            <img
+              src="./c1-assets/cute-dog-mid.png"
+              alt=""
+              class="w-52 absolute right-[0%] top-[30%] xl:static"
+            />
+          </div>
+          <div
+            class="max-w-[370px] min-h-[350px] bg-gradient-to-br from-slate-100 to-yellow-400 mx-auto pt-9 pl-9 relative rounded-xl mt-5 flex flex-col xl:min-h-[350px] xl:col-span-1"
           >
-            $7.99
-          </p>
-          <img
-            src="./c1-assets/cute-pet-mid.png"
-            alt=""
-            class="w-52 absolute right-[0%] top-[25%]"
-          />
+            <h4 class="font-['ADLaM Display'] text-2xl font-extrabold">
+              T-Shirt for Dogs
+            </h4>
+            <p
+              class="font-['ADLaM Display'] ml-3 text-5xl font-extrabold text-yellow-400 mt-4"
+            >
+              $7.99
+            </p>
+            <img
+              src="./c1-assets/cute-pet-mid.png"
+              alt=""
+              class="w-52 absolute right-[0%] top-[25%]"
+            />
+          </div>
         </div>
       </section>
       <!-- newsletter -->
